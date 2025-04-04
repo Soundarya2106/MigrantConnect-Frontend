@@ -1,0 +1,89 @@
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 27px 57px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .iconWrapper {
+    background-color: #223b6e;
+    border-radius: 34px;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .icon {
+    width: 31px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .cardTitle {
+    color: #000;
+    text-align: center;
+    margin-top: 28px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+  }
+  
+  .description {
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 21px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .contactInfo {
+    color: #223b6e;
+    text-align: center;
+    margin-top: 46px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  .contactInfo:hover {
+    text-decoration: underline;
+  }
+  
+  @media (width <= 991px) {
+    .card {
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .contactInfo {
+      margin-top: 40px;
+    }
+  }
+  

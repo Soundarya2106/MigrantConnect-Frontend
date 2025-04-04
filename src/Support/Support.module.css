@@ -1,0 +1,224 @@
+.container {
+    max-width: 1400px;
+    margin-left: 90px;
+    padding: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.Scontainer{
+    max-width: 1000px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.Header{
+    margin-left: -30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0.2, 0.2);
+    margin-bottom: 10px;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #002855;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: #1e1e1e;
+  }
+  
+  .arrow {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .content {
+    margin-top: 15px;
+    padding: 15px;
+    background: #223b6e;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.6; 
+    color: #ffffff;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .form label {
+    font-weight: bold;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    background-color: #002855;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #004aad;
+  }
+
+  .formField, .formFieldD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formFieldD{
+    margin-top: 10px;
+  }
+
+  .fieldLabel {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .required {
+    color: #ff0000;
+    font-size: 20px;
+    margin-left: 2px;
+  }
+  
+  .textInput {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    min-height: 49px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .selectWrapper{
+    position: relative;
+    width: 100%;
+  }
+
+  .selectInput {
+    appearance: none; /* Remove default dropdown styling */
+    background-color: #fff;
+    cursor: pointer;
+    padding-right: 40px;
+    font-size: 14px
+  }
+  
+
+  .selectInput option:checked {
+    background-color: #223b6e; /* Selected option background */
+    color: white; /* Selected option text color */
+  }
+
+  /* Optional: Add a dropdown arrow */
+  .selectInput::-ms-expand {
+    display: none; /* Hide default arrow in IE */
+  }
+  
+  .selectWrapper::after {
+    content: "\2B9F"; /* Unicode for downward arrow */
+    font-size: 14px;
+    color: #223b6e;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents interaction with the arrow */
+  }
+
+  .chatbotContainer {
+    width: 100%; /* Full width inside expanded section */
+    text-align: center; /* Center the button */
+    margin-top: 10px; /* Space from the above content */
+  }
+  
+  .chatButton {
+    background-color: #ffffff;
+    color: #223b6e;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .chatButton img{
+    width: 22px;
+    height: 22px;
+    margin-top: -4px;
+  }
+
+  .chatButtonContainer{
+    margin: auto;
+    text-align: center;
+    gap: 3px;
+  }
+  
+  .chatWindow {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+  }
+  
+  .Chatheader {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chatBody {
+    padding: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  

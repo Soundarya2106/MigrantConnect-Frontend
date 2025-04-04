@@ -1,0 +1,589 @@
+.registrationPage {
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Sidebar Styles */
+  .sidebarColumn {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    font-family: Poppins, "sans-serif";
+  }
+  
+  .sidebarHeader {
+    background-color: #223b6e;
+    color: #fff;
+    padding: 29px 30px;
+    min-height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .brandTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .brandLetter {
+    font-family:
+      Pacifico,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .brandText {
+    font-size: 27px;
+  }
+  
+  .headerSubtitle {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .sidebarNav {
+    border-right: 3px solid #223b6e;
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+
+  .stepsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .stepItem {
+    display: grid;
+  grid-template-columns: 2fr 2fr; /* 1:2 ratio for text and progress bar */
+  align-items: center;
+  padding: 10px 0;
+  margin-left: 10px;
+  }
+  
+  .progressBar {
+    background-color: #d9d9d9;
+    border-radius: 24px;
+    width: 131px;
+    height: 16px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .completed{
+    background-color: #4CAF50 !important; /* Green color for completed steps */
+    position: relative;
+  }
+
+  .tickIcon{
+    color: white;
+    font-size: 12px;
+  }
+  
+  .logoutButton {
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 38px;
+    padding: 15px 25px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 95px;
+    align-self: center;
+  }
+  
+  /* Main Content Styles */
+  .mainContent {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 30px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+  }
+  
+  .pageTitle {
+    color: #1e1e1e;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  .languageSelector {
+    background-color: #223b6e;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .languageIcon,
+  .dropdownIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .progressNav {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .progressSteps {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .progressStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+  
+  .stepIndicator {
+    background-color: #52555c;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .stepIndicatorActive {
+    background-color: #223b6e;
+    border: 3px solid #223b6e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkboxWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between checkbox and label */
+    margin: 30px;
+    font-family: Poppins, "sans-serif";
+    margin-bottom: 0;
+  }
+  
+  .checkboxWrapper input[type="checkbox"] {
+    width: 20px; /* Increase checkbox size */
+    height: 20px;
+    accent-color: #223b6e; /* Change checkbox tick color */
+    cursor: pointer;
+  }
+    
+  .checkboxWrapper label {
+    font-size: 16px; /* Adjust label font size */
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .personalDetailsForm, .contactDetailsForm, .languagePreferenceForm, 
+  .migrationDetailsForm, .currentAddressForm, .permanentAddressForm, 
+  .OtherAddDetailsForm, .workDetailsForm, .employerDetailsForm,
+  .workDurationForm, .incomeDetailsForm, .bankDetailsForm,
+  .nomineeDetailsForm, .bankDocForm, .aadhaarForm,
+  .voterIDForm, .rationCardForm, .workerIDCardForm,
+  .panForm, .photoForm, .familyStructureForm,
+  .familyMembersForm, .PContactForm, .SContactForm,
+  .consentForm{
+    background-color: #fff;
+    border-top: 6px solid #223b6e;
+    border-radius: 0 0 10px 10px;
+    margin-top: 44px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 32px 20px 51px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+  }
+
+  
+  .formTitle {
+    color: #1e1e1e;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px 3px;
+  }
+  
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+  
+  .formField, .formFieldD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formFieldD{
+    margin-top: 10px;
+  }
+
+  .fieldLabel {
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .required {
+    color: #ff0000;
+    font-size: 20px;
+    margin-left: 2px;
+  }
+  
+  .textInput {
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 49px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .selectWrapper{
+    position: relative;
+    width: 100%;
+  }
+
+  .selectInput {
+    appearance: none; /* Remove default dropdown styling */
+    background-color: #fff;
+    cursor: pointer;
+    padding-right: 40px;
+    font-size: 14px
+  }
+  
+
+  .selectInput option:checked {
+    background-color: #223b6e; /* Selected option background */
+    color: white; /* Selected option text color */
+  }
+
+  /* Optional: Add a dropdown arrow */
+  .selectInput::-ms-expand {
+    display: none; /* Hide default arrow in IE */
+  }
+  
+  .selectWrapper::after {
+    content: "\2B9F"; /* Unicode for downward arrow */
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents interaction with the arrow */
+  }
+
+  .dateInputGroup {
+    display: flex;
+    gap: 28px;
+  }
+  
+  .dateInput {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80px;
+    min-height: 50px;
+    padding: 12px;
+    text-align: center;
+    color: #52555c;
+  }
+
+  .dropZone {
+    border: 2px dashed #4272D4;
+    background-color: rgba(123, 123, 255, 0.08);
+    color: #223b6e;
+    text-align: center;
+    padding: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropZoneB{
+    border: 2px dashed #4272D4;
+    background-color: rgba(123, 123, 255, 0.08);
+    color: #223b6e;
+    text-align: center;
+    padding: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 317%;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .dropZone p , .dropZoneB p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4272D4;
+  }
+  
+  .submitButton, .backButton{
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 40px;
+    padding: 15px 25px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 44px;
+    float: right;
+    margin-right: 44px;
+    margin-bottom: 44px;
+  }
+
+  .editFileButton{
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 40px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #223b6e;
+    color: #fff;
+    padding: 21px 80px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+  }
+  
+  .footerContent {
+    max-width: 378px;
+    margin: 0 auto;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin: 0 31px;
+  }
+  
+  .socialLink {
+    background-color: #fff;
+    border-radius: 34px;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialIcon {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+  }
+  
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .footerLink {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footerBottom {
+    background-color: #223b6e;
+    padding: 13px 80px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .footerText {
+    max-width: 273px;
+    margin: 0 auto;
+  }
+  
+  .copyright,
+  .slogan {
+    margin: 5px 0;
+  }
+  
+  /* Media Queries */
+  @media (width <= 991px) {
+    .registrationPage {
+      max-width: 100%;
+    }
+  
+    .contentWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .sidebarColumn {
+      width: 100%;
+    }
+  
+    .sidebarHeader {
+      padding-left: 20px;
+    }
+  
+    .sidebarNav {
+      padding: 20px;
+    }
+  
+    .logoutButton {
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .mainContent {
+      width: 100%;
+    }
+  
+    .contentHeader {
+      padding: 20px;
+    }
+  
+    .languageSelector {
+      padding: 10px 20px;
+    }
+  
+    .personalDetailsForm {
+      margin: 40px 10px;
+    }
+  
+    .formGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer {
+      padding: 20px;
+    }
+  
+    .footerNav {
+      flex-wrap: wrap;
+    }
+  
+    .footerBottom {
+      padding: 13px 20px;
+    }
+  }
+  
+  .container {
+    background-color: #fff;
+    border-top: 6px solid #223b6e;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    max-width: 1043px;
+    margin: 0 auto;
+    padding: 32px;
+    box-shadow: 4px 4px 10px #00000040;
+  }
+  @media (width<=991px) {
+    .container {
+      max-width: 90%;
+      padding: 24px;
+    }
+  }
+  @media (width<=640px) {
+    .container {
+      max-width: 100%;
+      padding: 16px;
+    }
+  }
+  .header {
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+  }
+  @media (width<=991px) {
+    .header {
+      font-size: 16px;
+    }
+  }
+  @media (width<=640px) {
+    .header {
+      font-size: 15px;
+    }
+  }
+  
+  .disabledButton {
+    background-color: #9b9b9b;
+    cursor: not-allowed;  /* Change cursor to indicate it's disabled */
+  }
+  

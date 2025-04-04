@@ -1,0 +1,340 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -30px;
+    margin-left: -70px;
+}
+
+.formTitle {
+    color: #1e1e1e;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px 3px;
+  }
+  
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+  
+  .formField, .formFieldD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formFieldD{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .fieldLabel {
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .required {
+    color: #ff0000;
+    font-size: 20px;
+    margin-left: 2px;
+  }
+  
+  .textInput {
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 49px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .issueDetailsForm, .docDetailsForm, .contactDetailsForm, .priorityForm, .verificationForm, .consentForm{
+    background-color: #fff;
+    border-top: 6px solid #223b6e;
+    border-radius: 0 0 10px 10px;
+    margin-top: 44px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 35px 20px 51px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+  }
+
+  .verifyButton{
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .selectWrapper{
+    position: relative;
+    width: 100%;
+  }
+
+  .selectInput {
+    appearance: none; /* Remove default dropdown styling */
+    background-color: #fff;
+    cursor: pointer;
+    padding-right: 40px;
+    font-size: 14px
+  }
+  
+
+  .selectInput option:checked {
+    background-color: #223b6e; /* Selected option background */
+    color: white; /* Selected option text color */
+  }
+
+  /* Optional: Add a dropdown arrow */
+  .selectInput::-ms-expand {
+    display: none; /* Hide default arrow in IE */
+  }
+  
+  .selectWrapper::after {
+    content: "\2B9F"; /* Unicode for downward arrow */
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents interaction with the arrow */
+  }
+
+  .dateInputGroup {
+    display: flex;
+    gap: 28px;
+  }
+  
+  .dateInput {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80px;
+    min-height: 50px;
+    padding: 12px;
+    text-align: center;
+    color: #52555c;
+  }
+
+  .textArea {
+    width: 100%;  /* Make it full width */
+    min-height: 100px;  /* Adjust height */
+    resize: vertical;  /* Allow vertical resizing */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .textbox{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .dropZone {
+    border: 2px dashed #4272D4;
+    background-color: rgba(123, 123, 255, 0.08);
+    color: #223b6e;
+    text-align: center;
+    padding: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropZoneB{
+    border: 2px dashed #4272D4;
+    background-color: rgba(123, 123, 255, 0.08);
+    color: #223b6e;
+    text-align: center;
+    padding: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 317%;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .dropZone p , .dropZoneB p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4272D4;
+  }
+
+  .editFileButton{
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 40px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton{
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 40px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .submitWrapper{
+    display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if needed) */
+  width: 100%; /* Ensures it takes full width */
+  }
+
+  .radioGroup{
+    display: flex;
+    gap: 20px;
+  }
+
+  .radioLabel{
+    display: flex;
+  align-items: center;
+  gap: 6px; /* Small gap between radio button and label */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  }
+
+  .radioInput {
+    display: none; /* Hide default radio button */
+  }
+  
+  .customRadio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .radioInput:checked + .customRadio {
+    border-color: #223b6e;
+    background-color: #223b6e;
+  }
+  
+  .radioInput:checked + .customRadio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .contactDetailsRow {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .disabledButton {
+    background-color: #9b9b9b;
+    cursor: not-allowed;  /* Change cursor to indicate it's disabled */
+  }
+  
+  /* Container to center content */
+.ackContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Acknowledgment box */
+.ackBox {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 600px;
+}
+
+/* Title styling */
+.ackTitle {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+/* Content section */
+.ackContent {
+  padding: 15px;
+  padding-left: 120px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.ackContent p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ackContent span {
+  font-weight: 800;
+  color: #223b6e;
+}
+
+/* Links section */
+.ackLinks {
+  margin-top: 15px;
+}
+
+.ackLink {
+  color: #223b6e;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 8px;
+}
+
+.ackLink:hover {
+  text-decoration: underline;
+}
+
+/* Divider between links */
+.divider {
+  color: #333;
+  font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.servicesContainer {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    margin-top: 102px;
+    padding: 40px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .servicesHeader {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    padding: 0 11px;
+    display: grid;
+    position: relative;
+  }
+  
+  @media (width <= 991px) {
+    .servicesGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .servicesGrid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
+  .serviceCard {
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    height: 194px;
+    display: flex;
+    box-shadow: 4px 4px 10px #00000040;
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .serviceCard .serviceIconContainer path{
+    fill: #ffffff; /* Default color */
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .serviceCard:hover .serviceIconContainer path{
+    fill: #223b6e; /* Change color on hover */
+  }
+  
+
+  .serviceCard:hover{
+    transform: scale(1.05); 
+    background-color: #223b6e;
+  }
+
+  
+  .serviceCard:hover .serviceIconContainer{
+    background-color: #ffffff;
+  }
+
+  .serviceCard:hover .serviceTitle,
+  .serviceCard:hover .serviceDescription{
+    color: #ffffff;
+  }
+
+
+  
+  @media (width <= 640px) {
+    .serviceCard {
+      height: auto;
+      min-height: 194px;
+    }
+  }
+  
+  .serviceContent {
+    width: 290px;
+    padding: 31px 0;
+  }
+  
+  .serviceIconContainer {
+    background-color: #223b6e;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    display: inline-flex;
+  }
+  
+  .serviceTitle {
+    color: #1e1e1e;
+    text-align: left;
+    margin-top: 13px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  .serviceDescription {
+    color: #1e1e1e;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  

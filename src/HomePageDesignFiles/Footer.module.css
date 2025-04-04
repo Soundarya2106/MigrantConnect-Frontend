@@ -1,0 +1,126 @@
+.mainFooter {
+    color: #fff;
+    background-color: #223b6e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 115px;
+    width: 100%;
+    padding: 10px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .footerSection {
+    background-color: #223b6e;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    padding: 24px 20px;
+  }
+  
+  .sectionTitle {
+    font-weight: 800;
+    margin: 0;
+    font-size: 17px
+  }
+  
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 9px;
+  }
+  
+  .footerNav a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .contactInfo {
+    margin-top: 9px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9px;
+  }
+
+  .contactItem:nth-child(3){
+    cursor: pointer;
+  }
+
+  .contactIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .socialFooter {
+    background-color: #223b6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .socialLink {
+    background-color: #fff;
+    border-radius: 34px;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialLink img {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: center;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  
+  .tagline {
+    margin-top: 5px;
+  }
+  
+  @media (width <= 991px) {
+    .mainFooter,
+    .socialFooter {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,16 @@
+.mainContent{
+    display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Adjust alignment: center, space-between, space-around, etc. */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px;
+}
+
+.centerContent{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  overflow-x: hidden;
+  width: 100%;
+}

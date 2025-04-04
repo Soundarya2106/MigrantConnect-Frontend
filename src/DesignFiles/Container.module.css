@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container {
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  .imageee{
+    margin-left: 494px;
+  }
+  .mainContent {
+    background:#223b6e;
+    justify-content: space-between;
+    min-height: 567.5px;
+    padding: 0 33px;
+    display: flex;
+    position: relative;
+    margin-top: 102px;
+  }
+  
+  .leftContent {
+    color: #fff;
+    padding-top: 135px;
+  }
+  
+  .welcomeText {
+    font-family: Poppins, sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .brandName {
+    margin-bottom: 25px;
+    font-family: Poppins, sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+  }
+  
+  .description {
+    max-width: 547px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .imageContainer {
+    position: absolute;
+  right: 25%; /* Adjust position */
+  bottom: 0;
+  z-index: 1;
+  margin-right: 100px;
+  }
+  
+  .fadeImage {
+    width: 567.5px; /* Adjust as needed */
+  max-width: 100%;
+  opacity: 0.5; /* Slight transparency */
+  
+  /* Creates the fading effect */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) );
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+
+
+  /* Optional: Soft blur effect */
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+  }
+  
+  .logotext{
+    font-family: Pacifico, cursive;
+    font-size: 68px;
+    color: #ffffff;
+  }
+
+  .logo{
+    color: #ffffff;
+    text-shadow: 0 4px 4px #4040406b;
+    font-family: Poppins, sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+  }
+
+  @media (width <= 991px) {
+    .mainContent {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .mainContent {
+      padding: 10px;
+    }
+  
+    .leftContent {
+      text-align: center;
+      padding-top: 50px;
+    }
+  
+    .welcomeText,
+    .brandName {
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .headerContainer {
+      flex-direction: column;
+    }
+    
+    .mainContent {
+      margin-top: 150px; /* Adjust based on new header height */
+    }
+  }
+  

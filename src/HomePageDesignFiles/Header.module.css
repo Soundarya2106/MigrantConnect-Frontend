@@ -1,0 +1,152 @@
+.header {
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 59px;
+    width: 100%;
+    min-height: 102px;
+    padding: 0 44px;
+    display: flex;
+    box-shadow: 0 4px 4px #40404033;
+  }
+  
+  .logo {
+    color: #000;
+    text-shadow: 0 4px 4px #4040406b;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 368px;
+    margin: auto 0;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .logoM,
+  .logoC {
+    font-family:
+      Pacifico,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+  }
+  
+  .logoM {
+    color: #404040;
+  }
+  
+  .logoC {
+    color: #223b6e;
+  }
+  
+  .logoTextM, 
+  .logoTextC {
+    font-size: 35px;
+  }
+
+  .logoTextM{
+    color: #404040;
+  }
+
+  .logoTextC{
+    color: #223b6e;
+  }
+  
+  .searchBar {
+    color: #52555c;
+    background-color: #fff;
+    border: 2px solid #223b6e;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 413px;
+    min-width: 240px;
+    min-height: 51px;
+    margin: auto 0;
+    padding: 13px 25px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+  }
+  
+  .searchIcon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  .languageSelector {
+    color: #fff;
+    background-color: #223b6e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .languageIcon,
+  .dropdownIcon {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+  }
+  
+  .userActions {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .actionIcon:nth-of-type(2){
+    border: 3px solid #223b6e;
+    border-radius: 50%;
+  }
+  
+  .actionIcon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  @media (width <= 991px) {
+    .header {
+      padding: 0 20px;
+    }
+  
+    .searchBar {
+      padding: 13px 20px;
+    }
+  
+    .languageSelector {
+      padding: 10px 20px;
+    }
+  }
+  

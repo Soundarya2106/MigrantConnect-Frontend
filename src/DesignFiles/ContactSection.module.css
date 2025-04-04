@@ -1,0 +1,51 @@
+.contactSection {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 115px 0 52px;
+    overflow: hidden;
+    margin-top: 102px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .cardsContainer {
+    width: 728px;
+    max-width: 100%;
+    margin: -48px auto 0;
+    z-index: 10;
+    align-self: center;
+  }
+  
+  .cardsWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .cardColumn {
+    width: 50%;
+  }
+  
+  @media (width <= 991px) {
+    .contactSection {
+      padding-top: 100px;
+    }
+  
+    .container {
+      max-width: 100%;
+    }
+  
+    .cardsWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .cardColumn {
+      width: 100%;
+    }
+  }
+  

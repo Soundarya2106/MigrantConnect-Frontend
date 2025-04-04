@@ -1,0 +1,110 @@
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  
+  .chatMessages {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 300px;
+    padding-bottom: 10px;
+    scrollbar-width: none; 
+  }
+  
+  .botMessage, .userMessage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .botMessage {
+    justify-content: flex-start;
+  }
+  
+  .userMessage {
+    justify-content: flex-end;
+  }
+  
+  .botMessage p, .userMessage p {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .botMessage p {
+    background: #e0e0e0;
+    color: #1e1e1e;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: 500;
+  }
+  
+  .userMessage p {
+    background: #4f46e5;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: 500;
+  }
+  
+  .botIcon, .userIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .userMessage .userIcon {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  
+  .quickQuestions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .quickQuestions button {
+    background: white;
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+  
+  .chatInput {
+    display: flex;
+    align-items: center;
+    background: #d9dae1;
+    border-radius: 24px;
+    padding: 8px;
+  }
+  
+  .chatInput input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: #d9dae1;
+    padding: 8px;
+  }
+  
+  .chatInput button {
+    background: #223b6e;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .chatInput img{
+    width: 25px;
+    height: 25px;
+  }

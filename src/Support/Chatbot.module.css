@@ -1,0 +1,110 @@
+/* Full-Screen Chatbot */
+
+  
+  .chatContainer {
+    width: 100%;
+    margin-top: 20px;
+  max-width: 1769px;  /* Set a limit to avoid taking full width */
+  height: 580px;  /* Set height */
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  }
+  
+  .chatHeader {
+    background: #223b6e;
+    color: white;
+    padding: 5px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+  }
+
+  .botInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .botImage {
+    width: 50px;  /* Adjust size */
+    height: 50px;
+    border-radius: 50%;  /* Make it circular */
+    display: flex;
+    margin-top: -11px;
+    border:3px solid #ffffff;
+    padding: 5px;
+  }
+  
+  
+  .closeButton {
+    background-color: #223b6e;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+  
+  .chatBody {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  .botMessage {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .suggestions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .suggestions button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+    cursor: pointer;
+  }
+  
+  .chatFooter {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chatFooter input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .chatFooter button {
+    background: #223b6e;
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .chatFooter img{
+    width: 30px;
+    height: 30px;
+  }
