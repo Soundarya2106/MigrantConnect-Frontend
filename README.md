@@ -30,9 +30,11 @@ MigrantConnect is a comprehensive platform designed to support migrant workers i
 
 
 
-<pre>## 🗂 Project Structure (Basic)
+## 🗂 Project Structure (Basic)
 
-<code>src/ ├── assets/ ├── components/ ├── modules/ │ ├── Registration/ │ ├── Dashboard/ │ ├── Issues/ │ ├── SchemeFinder/ │ └── Support/ ├── pages/ │ ├── Login.jsx │ ├── HomePage.jsx │ └── ... ├── App.jsx └── main.jsx</code></pre>
+```
+src/ -├── assets/ --├── components/ ├── modules/ │ ├── Registration/ │ ├── Dashboard/ │ ├── Issues/ │ ├── SchemeFinder/ │ └── Support/ ├── pages/ │ ├── Login.jsx │ ├── HomePage.jsx │ └── ... ├── App.jsx └── main.jsx
+```
 
 ## 🚀 How to Run Locally
 
