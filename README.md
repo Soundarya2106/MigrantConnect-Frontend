@@ -21,7 +21,7 @@ MigrantConnect is a comprehensive platform designed to support migrant workers i
 ## 🛠 Tech Stack
 
 - **Frontend:** React + Vite
-- **Styling:** CSS / Tailwind CSS (optional)
+- **Styling:** CSS Modules
 - **Routing & Navigation:**
   - `react-router-dom`
   - `useNavigate`, `useParams`, `useLocation` hooks
