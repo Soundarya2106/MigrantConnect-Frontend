@@ -33,21 +33,186 @@ MigrantConnect is a comprehensive platform designed to support migrant workers i
 ## 🗂 Project Structure (Basic)
 
 ```
-src/
-├── assets/
-├── components/
-├── modules/
-│   ├── Registration/
-│   ├── Dashboard/
-│   ├── Issues/
-│   ├── SchemeFinder/
-│   └── Support/
-├── pages/
-│   ├── Login.jsx
-│   ├── HomePage.jsx
-│   └── ...
-├── App.jsx
-└── main.jsx
+|── MCFrontend
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── assets
+    │   │   ├── abouticon.png
+    │   │   ├── BGImage.jpg
+    │   │   ├── bot.png
+    │   │   ├── chat.png
+    │   │   ├── contact.png
+    │   │   ├── down.png
+    │   │   ├── faq.png
+    │   │   ├── Frame 100 (1).png
+    │   │   ├── gethelp.png
+    │   │   ├── Impact.png
+    │   │   ├── location.png
+    │   │   ├── Logo.png
+    │   │   ├── Mission.png
+    │   │   ├── react.svg
+    │   │   ├── reportIcon.png
+    │   │   ├── search.png
+    │   │   ├── track.png
+    │   │   ├── up.png
+    │   │   ├── user.png
+    │   │   └── Vision.jpg
+    │   ├── Components
+    │   │   ├── AboutHeroSection.jsx
+    │   │   ├── AboutSection.jsx
+    │   │   ├── ContactCard.jsx
+    │   │   ├── ContactHeader.jsx
+    │   │   ├── ContactSection.jsx
+    │   │   ├── CopyRight.jsx
+    │   │   ├── CornerDesign.jsx
+    │   │   ├── FeatureSection.jsx
+    │   │   ├── FilpCard.jsx
+    │   │   ├── Footer.jsx
+    │   │   ├── Header.jsx
+    │   │   ├── Icons.jsx
+    │   │   ├── LanguageSelector.jsx
+    │   │   ├── LoginForm.jsx
+    │   │   ├── PinIcon.jsx
+    │   │   ├── QuickLinks.jsx
+    │   │   ├── ServicesCard.jsx
+    │   │   ├── ServicesContainer.jsx
+    │   │   ├── ServicesHeader.jsx
+    │   │   ├── ServicesIcon.jsx
+    │   │   └── SocialIcons.jsx
+    │   ├── DesignFiles
+    │   │   ├── AboutSection.module.css
+    │   │   ├── ContactCard.module.css
+    │   │   ├── ContactHeader.module.css
+    │   │   ├── ContactSection.module.css
+    │   │   ├── Container.module.css
+    │   │   ├── FeatureSection.module.css
+    │   │   ├── Footer.module.css
+    │   │   ├── Header.module.css
+    │   │   ├── LanguageSelector.module.css
+    │   │   ├── LoginForm.module.css
+    │   │   └── ServicesContainer.module.css
+    │   ├── FooterPagesComponents
+    │   │   ├── About.jsx
+    │   │   ├── Contact.jsx
+    │   │   ├── DPC.jsx
+    │   │   ├── PP.jsx
+    │   │   └── TAC.jsx
+    │   ├── HomePageComponents
+    │   │   ├── Dashboard.jsx
+    │   │   ├── Footer.jsx
+    │   │   ├── Header.jsx
+    │   │   ├── IDCardSection.jsx
+    │   │   ├── Location.jsx
+    │   │   ├── PieCharts.jsx
+    │   │   ├── Sidebar.jsx
+    │   │   ├── StatsSection.jsx
+    │   │   └── WelcomeSection.jsx
+    │   ├── HomePageDesignFiles
+    │   │   ├── Dashboard.module.css
+    │   │   ├── Footer.module.css
+    │   │   ├── Header.module.css
+    │   │   ├── IDCardSection.module.css
+    │   │   ├── Location.module.css
+    │   │   ├── Maincontent.module.css
+    │   │   ├── Sidebar.module.css
+    │   │   ├── StatsSection.module.css
+    │   │   └── WelcomeSection.module.css
+    │   ├── main.jsx
+    │   ├── Pages
+    │   │   ├── AboutPage.jsx
+    │   │   ├── ChangePasswordPage.jsx
+    │   │   ├── ChangeProfilePage.jsx
+    │   │   ├── ChatbotPage.jsx
+    │   │   ├── ContactPage.jsx
+    │   │   ├── DataProtectionPage.jsx
+    │   │   ├── HomePage.jsx
+    │   │   ├── LandingPage.jsx
+    │   │   ├── LocationPage.jsx
+    │   │   ├── PrivacyPolicyPage.jsx
+    │   │   ├── ProfilePage1.jsx
+    │   │   ├── RegistrationPage1.jsx
+    │   │   ├── RegistrationPage2.jsx
+    │   │   ├── RegistrationPage3.jsx
+    │   │   ├── RegistrationPage4.jsx
+    │   │   ├── RegistrationPage5.jsx
+    │   │   ├── RegistrationPage6.jsx
+    │   │   ├── RegistrationPage7.jsx
+    │   │   ├── RegistrationPage8.jsx
+    │   │   ├── ReportIssuePage1.jsx
+    │   │   ├── ReportIssuePage2.jsx
+    │   │   ├── SchemeFormPage.jsx
+    │   │   ├── SchemeResultPage.jsx
+    │   │   ├── SupportPage.jsx
+    │   │   ├── TermsAndConditionsPage.jsx
+    │   │   ├── TrackingPage.jsx
+    │   │   └── UserRightsPage.jsx
+    │   ├── ProfilePageComponents
+    │   │   ├── ChangePassword.jsx
+    │   │   ├── ChangeProfile.jsx
+    │   │   ├── DetailsCard.jsx
+    │   │   ├── ProfileHeader.jsx
+    │   │   ├── ProfileProgress.jsx
+    │   │   └── ProfileTabs.jsx
+    │   ├── ProfilePageDesignFiles
+    │   │   ├── ChangePassword.module.css
+    │   │   ├── ChangeProfile.module.css
+    │   │   ├── DetailsCard.module.css
+    │   │   ├── ProfileHeader.module.css
+    │   │   ├── ProfilePage.module.css
+    │   │   ├── ProfileProgress.module.css
+    │   │   └── ProfileTabs.module.css
+    │   ├── RegistrationComponents
+    │   │   ├── ConsentComponents
+    │   │   │   ├── CheckBoxAgreement.jsx
+    │   │   │   ├── ConsentSection.jsx
+    │   │   │   └── InputDesign.module.css
+    │   │   ├── MainContent1.jsx
+    │   │   ├── MainContent2.jsx
+    │   │   ├── MainContent3.jsx
+    │   │   ├── MainContent4.jsx
+    │   │   ├── MainContent5.jsx
+    │   │   ├── MainContent6.jsx
+    │   │   ├── MainContent7.jsx
+    │   │   ├── MainContent8.jsx
+    │   │   └── Sidebar.jsx
+    │   ├── RegistrationDesignFiles
+    │   │   └── RegistrationPage.module.css
+    │   ├── ReportIssue
+    │   │   ├── CheckBox.jsx
+    │   │   ├── ReportIssue.module.css
+    │   │   ├── RI1.jsx
+    │   │   └── RT2.jsx
+    │   ├── SchemeFinder
+    │   │   ├── EligibilityData.jsx
+    │   │   ├── SchemeCard.jsx
+    │   │   ├── SchemeFinder.module.css
+    │   │   ├── SchemeForm.jsx
+    │   │   ├── SchemeResult.jsx
+    │   │   └── SplCategory.jsx
+    │   ├── Support
+    │   │   ├── ChatBody.jsx
+    │   │   ├── ChatBody.module.css
+    │   │   ├── Chatbot.jsx
+    │   │   ├── Chatbot.module.css
+    │   │   ├── Support.module.css
+    │   │   ├── SupportContent.jsx
+    │   │   └── SupportDetails.jsx
+    │   ├── TrackRequests
+    │   │   ├── Cards.module.css
+    │   │   ├── IssueCards.jsx
+    │   │   ├── SchemeCards.jsx
+    │   │   ├── Track.jsx
+    │   │   └── TrackRequests.module.css
+    │   └── UserRightsAndResponsibilities
+    │       ├── Header.jsx
+    │       ├── ResponsibilityItem.jsx
+    │       ├── RightItem.jsx
+    │       ├── URR.jsx
+    │       ├── UserRightsAndResponsibilities.module.css
+    │       └── ViolationItem.jsx
+    └── vite.config.js
+
 ```
 
 ## 🚀 How to Run Locally

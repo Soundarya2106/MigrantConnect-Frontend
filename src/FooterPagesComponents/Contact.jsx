@@ -35,7 +35,7 @@ const Contact = () => {
                 icon="point2"
                 title="💭WhatsApp Support"
                 details={[
-                  "Chat with us on WhatsApp: +91 9080143009",
+                  "Chat with us on WhatsApp: +91 XXXXXXXXX",
                 ]}
               />
             </div>

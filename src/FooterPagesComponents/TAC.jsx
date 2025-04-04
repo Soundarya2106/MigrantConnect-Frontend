@@ -134,7 +134,7 @@ const TAC = () => {
             <p className={styles.introText}>
             If you have any questions about this Privacy Policy or how your data is handled, you can contact us at:<br></br>
               <b>📧Email:</b> support@migrantconnect.in<br></br>
-              <b>📞Helpline:</b> +91-9080143009<br></br><br></br><br></br>
+              <b>📞Helpline:</b> +91- XXXXXXXXXX<br></br><br></br><br></br>
               <i><b>By using MigrantConnect, you agree to these Terms & Conditions. If you disagree with any part, please discontinue use of the platform.</b></i>
             </p>
           </section>

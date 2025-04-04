@@ -16,7 +16,7 @@ const ContactSection = () => {
                 icon="https://cdn.builder.io/api/v1/image/assets/TEMP/fa44366ab7b1ffe7447282ba59faf5bdd091221d8ba7c281ba3941473e653bea?placeholderIfAbsent=true&apiKey=42ceb3c9732b4f6a8e263230fd362256"
                 title="Call for Assistance"
                 description="Need immediate assistance? Call our support team for quick help, guidance, and reliable support anytime."
-                contactInfo="+91 9080143009"
+                contactInfo="+91 XXXXXXXXXX"
                 type="phone"
               />
             </div>

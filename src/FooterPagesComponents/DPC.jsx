@@ -158,7 +158,7 @@ const DPC = () => {
             <p className={styles.introText}>
               If you suspect a data breach, unauthorized access, or misuse of your information, you can immediately:<br></br>
               <b>📧Email:</b> support@migrantconnect.in<br></br>
-              <b>📞Helpline:</b> +91-9080143009<br></br>
+              <b>📞Helpline:</b> +91- XXXXXXXXXX<br></br>
               We take all reports seriously and investigate security incidents promptly.
             </p>
           </section>

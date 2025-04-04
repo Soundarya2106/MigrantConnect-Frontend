@@ -102,7 +102,7 @@ const PP = () => {
               If you have any questions about this Privacy Policy or how your
               data is handled, you can contact us at:<br></br>
               <b>📧Email:</b> support@migrantconnect.in<br></br>
-              <b>📞Helpline:</b> +91-9080143009<br></br>
+              <b>📞Helpline:</b> +91- XXXXXXXXXX<br></br>
               <br></br>
               <br></br>
               <i>

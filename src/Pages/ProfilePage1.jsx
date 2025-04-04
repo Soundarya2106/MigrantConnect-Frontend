@@ -30,8 +30,8 @@ const ProfilePage1 = () =>{
                 { label: "Gender", value: "Male" },
                 { label: "Nationality", value: "Indian" },
                 { label: "Religion", value: "Hindu" },
-                { label: "Category", value: "BC" },
-                { label: "Caste", value: "Jats" },
+                { label: "Category", value: "category" },
+                { label: "Caste", value: "caste" },
                 { label: "Blood Group", value: "B+ve" },
                 { label: "Education Level", value: "10th" },
               ]}
@@ -41,7 +41,7 @@ const ProfilePage1 = () =>{
             <DetailsCard
               title="Contact Details"
               details={[
-                { label: "Phone Number", value: "9875348973" },
+                { label: "Phone Number", value: "7777777777" },
                 { label: "Alternate Number", value: "-" },
                 { label: "Email ID", value: "ranjitsinghs@gmail.com" },
               ]}
@@ -123,7 +123,7 @@ const ProfilePage1 = () =>{
               title="Employer Details"
               details={[
                 { label: "Employer Name", value: "Ramesh S" },
-                { label: "Employer Contact Number", value: "8793425923" },
+                { label: "Employer Contact Number", value: "8888888888" },
                 { label: "Work Location", value: "Chrompet, Chennai" },
                 { label: "Work Contract Available?", value: "Yes" },
               ]}
@@ -156,8 +156,8 @@ const ProfilePage1 = () =>{
                 { label: "Bank Name", value: "KVB Bank" },
                 { label: "Branch Name", value: "Thambaram" },
                 { label: "Account Holder Name", value: "Ranjit Singh S" },
-                { label: "Account Number", value: "67686786765" },
-                { label: "IFSC Code", value: "daf894252" },
+                { label: "Account Number", value: "6666666666666" },
+                { label: "IFSC Code", value: "tttttttttt" },
               ]}
             />
             
@@ -189,15 +189,15 @@ const ProfilePage1 = () =>{
             <DetailsCard
               title="Documents"
               details={[
-                { label: "Aadhaar Number", value: "223141423525" },
+                { label: "Aadhaar Number", value: "222222222222" },
                 { label: "Aadhaar Card", value: "aadhaar.pdf" },
                 { label: "", value: "" },
                 { label: "", value: "" },
-                { label: "Voter ID", value: "PB/07/234/567890" },
+                { label: "Voter ID", value: "PB/00/000/000000" },
                 { label: "Voter ID Card", value: "voterID.pdf" },
                 { label: "", value: "" },
                 { label: "", value: "" },
-                { label: "Pan Number", value: "PV6747AU65" },
+                { label: "Pan Number", value: "PV0000000" },
                 { label: "Pan Card", value: "pan.pdf" },
                 { label: "", value: "" },
                 { label: "", value: "" },
@@ -230,7 +230,7 @@ const ProfilePage1 = () =>{
               details={[
                 { label: "Name", value: "Rikshit Singh" },
                 { label: "Relationship to Worker", value: "Brother" },
-                { label: "Contact Number", value: "9767547436" },
+                { label: "Contact Number", value: "8888888888" },
                 { label: "Occupation", value: "-" },
                 { label: "Number of Children", value: "-" },
                 { label: "Children Age Group", value: "-" },
@@ -246,7 +246,7 @@ const ProfilePage1 = () =>{
               details={[
                 { label: "Name", value: "Rakshit Singh" },
                 { label: "Relationship to Worker", value: "Brother" },
-                { label: "Contact Number", value: "8763413453" },
+                { label: "Contact Number", value: "8888888888" },
                 { label: "Address", value: "12, Gandhi Street, Anna Nagar, Chennai, Tamil Nadu" },
               ]}
             />

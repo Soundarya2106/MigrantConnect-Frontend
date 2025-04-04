@@ -46,7 +46,7 @@ const Footer = () => {
                 alt="Phone"
                 className={styles.contactIcon}
               />
-              <span>+91 9080143009</span>
+              <span>+91 XXXXXXXXXX</span>
             </div>
             <div className={styles.contactItem}>
               <img

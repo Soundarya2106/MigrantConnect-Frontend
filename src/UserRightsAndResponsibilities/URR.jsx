@@ -136,7 +136,7 @@ const URR = () => {
               your data, you must report it immediately.<br></br>
               <b>🔍How to Report?</b><br></br>
               <b>📧Email:</b> support@migrantconnect.in<br></br>
-              <b>📞Helpline:</b> +91-9080143009<br></br>
+              <b>📞Helpline:</b> +91- XXXXXXXXXX<br></br>
               MigrantConnect will take strict action against policy violators,
                 fraudsters, and unauthorized access attempts.
             </p>
